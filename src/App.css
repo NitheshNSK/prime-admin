@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.cropper-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: #454c57; /* Tailwind's gray-400 */
+}
+input{
+  color: #454c57 !important;
+}
