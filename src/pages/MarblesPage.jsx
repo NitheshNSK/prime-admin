@@ -54,11 +54,6 @@ export default function MarblesPage() {
       return;
     }
 
-    if (!formData.stock.trim()) {
-      toast.error("Stock is required.");
-      return;
-    }
-
     if (!editingId && (!cropImage || !croppedAreaPixels)) {
       toast.error("Please upload and crop an image.");
       return;
@@ -100,7 +95,7 @@ export default function MarblesPage() {
   return (
     <div className="min-h-screen w-[100vw] bg-gray-50 p-4 md:p-8">
       <h2 className="text-2xl font-bold text-black mb-6 text-center">
-        Manage Marbles
+        Manage Natural Stones
       </h2>
 
       <form

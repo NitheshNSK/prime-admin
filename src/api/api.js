@@ -16,8 +16,7 @@ export const loginAdmin = (email, password) =>
   API.post("/admin/login", { email, password });
 
 // Verify OTP — returns JWT token
-export const verifyOtp = (data) =>
-  API.post("/admin/verify-otp", data);
+export const verifyOtp = (data) => API.post("/admin/verify-otp", data);
 // --- Marbles ---
 export const getAllMarbles = () => API.get("/marbles/admin");
 
@@ -41,6 +40,11 @@ export const createKitchenProject = (formData) =>
   API.post("/kitchen-projects", formData);
 export const deleteKitchenProject = (id) =>
   API.delete(`/kitchen-projects/${id}`);
+
+export const getCategoriesProjects = () => API.get("/categories");
+export const createCategoriesProject = (formData) =>
+  API.post("/categories", formData);
+export const deleteCategoriesProject = (id) => API.delete(`/categories/${id}`);
 
 //Dashboard Summary
 export const getDashboardSummary = async () => {

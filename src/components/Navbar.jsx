@@ -34,11 +34,14 @@ export default function Navbar() {
           <NavLink to="/dashboard" className={navItemStyle}>
             Dashboard
           </NavLink>
-          <NavLink to="/marbles" className={navItemStyle}>
-            Marbles
+          <NavLink to="/natural-stones" className={navItemStyle}>
+            Natural Stones
           </NavLink>
           <NavLink to="/completed-projects" className={navItemStyle}>
             Completed Projects
+          </NavLink>
+          <NavLink to="/quartz" className={navItemStyle}>
+            Quartz
           </NavLink>
           <NavLink to="/kitchen-projects" className={navItemStyle}>
             Kitchen Projects
@@ -70,7 +73,11 @@ export default function Navbar() {
           >
             Dashboard
           </NavLink>
-          <NavLink to="/marbles" className={navItemStyle} onClick={toggleMenu}>
+          <NavLink
+            to="/natural-stones"
+            className={navItemStyle}
+            onClick={toggleMenu}
+          >
             Marbles
           </NavLink>
           <NavLink

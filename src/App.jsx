@@ -12,6 +12,7 @@ import CompletedProjects from "./pages/CompletedProjects";
 import KitchenProjects from "./pages/KitchenProjects";
 import { AuthProvider, useAuth } from "./auth/AuthContext";
 import Navbar from "./components/Navbar";
+import Categories from "./pages/Categories";
 
 const PrivateRoute = ({ children }) => {
   const { token } = useAuth();
@@ -44,7 +45,7 @@ export default function App() {
               }
             />
             <Route
-              path="/marbles"
+              path="/natural-stones"
               element={
                 <PrivateRoute>
                   <MarblesPage />
@@ -64,6 +65,14 @@ export default function App() {
               element={
                 <PrivateRoute>
                   <KitchenProjects />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/quartz"
+              element={
+                <PrivateRoute>
+                  <Categories />
                 </PrivateRoute>
               }
             />
