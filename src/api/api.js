@@ -3,7 +3,9 @@ import axios from "axios";
 const API = axios.create({
   baseURL: "https://prime-backend-i91j.onrender.com/api",
 });
-
+// const API = axios.create({
+//   baseURL: "http://localhost:8081/api",
+// });
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) config.headers.Authorization = `Bearer ${token}`;

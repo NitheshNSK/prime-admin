@@ -151,7 +151,7 @@ export default function Categories() {
             className="bg-white border border-gray-200 rounded-lg shadow hover:shadow-md transition duration-300"
           >
             <img
-              src={`https://prime-backend-i91j.onrender.com${project.imageUrl}`}
+              src={`${project.signedUrl}`}
               alt={project.title}
               className="w-full h-48 object-cover rounded-t-lg"
             />

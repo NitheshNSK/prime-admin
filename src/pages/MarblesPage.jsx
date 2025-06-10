@@ -170,7 +170,7 @@ export default function MarblesPage() {
             className="bg-white border border-gray-200 rounded-xl shadow hover:shadow-lg transition-all"
           >
             <img
-              src={`https://prime-backend-i91j.onrender.com${marble.imageUrl}`}
+              src={`${marble.signedUrl}`}
               alt={marble.name}
               className="w-full h-48 object-cover rounded-t-xl"
             />
